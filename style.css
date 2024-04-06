@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+:root {
+  --background: hsl(171, 100%, 96%);
+  --input-text-color: hsl(0, 0%, 33%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+.card {
+  width: 90%;
+  max-width: 470px;
+  background: linear-gradient(135deg, #00feba, #161231);
+  color: var(--color-white);
+  margin: 100px auto 0;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+}
+
+.date {
+  margin-block-end: 20px;
+  font-weight: 900;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.search input {
+  border: 0;
+  outline: 0;
+  background: var(--background);
+  color: var(--input-text-color);
+  padding: 10px 25px;
+  height: 60px;
+  border-radius: 30px;
+  flex: 1;
+  margin-inline-end: 16px;
+  font-size: 1.8rem;
+}
+
+.search button {
+  border: 0;
+  outline: 0;
+  background: var(--background);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.search button img {
+  width: 18px;
+  margin: 0 auto;
+}
+
+img {
+  margin: 0 auto;
+}
+
+.weather-icon {
+  width: 170px;
+  margin-block-start: 30px;
+}
+
+.weather h1 {
+  font-size: 8rem;
+  font-weight: 800;
+}
+
+.weather h2 {
+  font-size: 45px;
+  font-weight: 400;
+  margin-block-start: -10px;
+}
+
+.weather .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+  margin-block-start: 50px;
+}
+
+.weather .details .col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.col img {
+  width: 40px;
+  margin-inline-end: 10px;
+}
+
+.humidity,
+.wind {
+  font-size: 2.3rem;
+  margin-block-start: -6px;
+}
+
+.weather {
+  display: none;
+}
+
+.error {
+  text-align: left;
+  margin-inline-start: 10px;
+  margin-block-start: 10px;
+  font-size: 1.4rem;
+  display: none;
+  color: var(--color-white);
+}
+
+.description {
+  font-size: 2rem;
+}
