@@ -67,9 +67,12 @@ p {
   text-align: center;
 }
 
-.date {
+.date-time {
   margin-block-end: 20px;
   font-weight: 900;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
 }
 
 .search {
@@ -92,6 +95,11 @@ p {
   font-size: 1.8rem;
 }
 
+.search input:focus {
+  border: 1px solid var(--input-text-color);
+  outline: var(--background);
+}
+
 .search button {
   border: 0;
   outline: 0;
@@ -100,6 +108,11 @@ p {
   width: 60px;
   height: 60px;
   cursor: pointer;
+}
+
+.search button:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease-in-out;
 }
 
 .search button img {
@@ -167,4 +180,45 @@ img {
 
 .description {
   font-size: 2rem;
+}
+
+@media (max-width: 500px) {
+  /* .search {
+    flex-direction: column;
+    gap: 30px;
+  } */
+
+  .search input {
+    width: 80%;
+    height: 45px;
+  }
+
+  .search button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .search button img {
+    width: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .search input {
+    width: 100%;
+  }
+
+  .search button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .search button img {
+    width: 15px;
+  }
+
+  .weather .details {
+    flex-direction: column;
+    gap: 30px;
+  }
 }

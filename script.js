@@ -9,6 +9,8 @@ const searchInput = $(".search input");
 const searchButton = $(".search button");
 const weatherIcon = $(".weather-icon");
 
+// searchInput.focus();
+
 // Get the current date and time
 const date = new Date();
 const options = {
@@ -18,12 +20,19 @@ const options = {
   year: "numeric",
 };
 
-// Get the current time
-const time = new Date();
-const getTime = time.toLocaleTimeString(undefined);
+// Get the current time and update it every second
+const updateTime = () => {
+  const time = new Date();
+  const getTime = time.toLocaleTimeString(undefined);
+  $(".time").innerHTML = getTime;
+};
+
+updateTime();
+setInterval(updateTime, 1000);
 
 const formattedDate = date.toLocaleDateString(undefined, options);
-$(".date").innerHTML = `${formattedDate} ${getTime}`;
+
+$(".date").innerHTML = formattedDate;
 
 // Get the weather data from the API
 async function getWeather(city) {
