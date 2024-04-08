@@ -183,11 +183,6 @@ img {
 }
 
 @media (max-width: 500px) {
-  /* .search {
-    flex-direction: column;
-    gap: 30px;
-  } */
-
   .search input {
     width: 80%;
     height: 45px;
