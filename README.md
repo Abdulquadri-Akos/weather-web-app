@@ -31,7 +31,7 @@ This is a simple weather app that allows users to search for weather information
 
 ### Preview
 
-![Weather App Preview](/path/to/preview-image.png)
+![Weather App Preview](./assets/screen-grab.png)
 
 ### Credits
 
